@@ -37,58 +37,48 @@ html, body
 	float: left;
 }
 /*****MENU SECTION*****/
-.main-panel {
+.width-50 {
+    width: 50%;
+    float: left;
+    padding: 10px;
+	margin-top: 30px;
+}
+
+.width-50 img {
+    width: 100%;
+    border-radius: 40%;
+
+}
+.banner-section {
 	width: 100%;
 	float: left;
-	padding-top: 20px;
-	padding-bottom: 50px;
-	height: 100vh;
+	margin-top: 25vh;
 }
-
-.logo {
-	font-size: 40px;
-	font-weight: 600;
+.banner-section h1 {
+	font-size: 48px;
+	margin-top: 10px;
+	font-weight: bolder;
 }
-
-.span-col {
-	color: #ffbf35;
+.banner-section h2 {
+	font-size: 20px;
+	line-height: 25px;
+	margin-top: 10px;
+	font-weight: 400;
 }
-
-nav {
-	float: right;
-}
-
-nav a {
+.banner-section a {
+	float: left;
 	text-decoration: none;
-	font-size: 16px;
-	font-weight: 500;
-	margin-left: 20px;
-	color: white;
-}  
-    .download-button {
-        display: inline-block;
-        margin: 0px;
-        background-color:  #ffbf35;
-        color: black 80%;
-        padding: 8px 10px;
-        text-decoration: none;
-        border-radius: 1px;
-        border: none;
-        font-size:15px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
-
-    .download-button:hover {
-        background-color: #c70404;
-    }
-
-    .download-button a {
-        color: black 80%;
-        text-decoration: none;
-    }
-
-
+	font-size: 18px;
+	margin-top: 20px;
+	border-radius: 50%;
+	text-align: center;
+	border: 2px solid #ffbf35;
+	color: #ffbf35;
+	margin-left: 10px;
+	height: 50px;
+	width: 50px;
+	line-height: 50px;
+}
 /*BANNER IMAGE*****/
 .main-panel img {
 	margin-top: 10%;
