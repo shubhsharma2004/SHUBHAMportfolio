@@ -79,6 +79,29 @@ html, body
 	width: 50px;
 	line-height: 50px;
 }
+ .download-button {
+        display: inline-block;
+        margin: 0px;
+        background-color:  #ffbf35;
+        color: black 80%;
+        padding: 8px 10px;
+        text-decoration: none;
+        border-radius: 1px;
+        border: none;
+        font-size:15px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .download-button:hover {
+        background-color: #c70404;
+    }
+
+    .download-button a {
+        color: black 80%;
+        text-decoration: none;
+    }
+
 /*BANNER IMAGE*****/
 .main-panel img {
 	margin-top: 10%;
