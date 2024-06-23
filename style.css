@@ -90,34 +90,42 @@ nav a {
 
 
 /*****Main BANNER*****/
+.container {
+	width: 100%;
+	overflow: hidden;
+}
+
 .width-50 {
-    width: 50%;
-    float: left;
-    padding: 10px;
+	width: 50%;
+	float: left;
+	padding: 10px;
 	margin-top: 30px;
 }
 
 .width-50 img {
-    width: 100%;
-    border-radius: 40%;
-
+	width: 100%;
+	border-radius: 40%;
 }
+
 .banner-section {
 	width: 100%;
 	float: left;
 	margin-top: 25vh;
 }
+
 .banner-section h1 {
 	font-size: 48px;
 	margin-top: 10px;
 	font-weight: bolder;
 }
+
 .banner-section h2 {
 	font-size: 20px;
 	line-height: 25px;
 	margin-top: 10px;
 	font-weight: 400;
 }
+
 .banner-section a {
 	float: left;
 	text-decoration: none;
@@ -132,12 +140,61 @@ nav a {
 	width: 50px;
 	line-height: 50px;
 }
-/*BANNER IMAGE*****/
+
+/* BANNER IMAGE */
 .main-panel img {
 	margin-top: 10%;
 	width: 100%;
 	margin-left: 10%;
 }
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+	.width-50 {
+		width: 100%;
+		float: none;
+		padding: 0;
+		margin-top: 10px;
+	}
+
+	.banner-section {
+		margin-top: 10vh;
+		text-align: center;
+	}
+
+	.banner-section h1 {
+		font-size: 36px;
+	}
+
+	.banner-section h2 {
+		font-size: 18px;
+	}
+
+	.banner-section a {
+		display: inline-block;
+		float: none;
+		margin-top: 10px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.banner-section h1 {
+		font-size: 28px;
+	}
+
+	.banner-section h2 {
+		font-size: 16px;
+	}
+
+	.banner-section a {
+		height: 40px;
+		width: 40px;
+		line-height: 40px;
+		font-size: 16px;
+	}
+}
+/*BANNER IMAGE*****/
+
 /*****SKILL SECTION*****/
 .skill {
 	margin-top: 30px;
@@ -247,14 +304,37 @@ div[role="progressbar"] {
 }
 /*PORTFOLIO SECTION*/
 .gallery {
-	width: 100%;
-	float: left;
-	margin-top: 30px;
+    width: 100%;
+    float: left;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
+
 .gallery img {
-	height: auto;
-	width: 95%;
-	margin-bottom: 20px;
+    height: auto;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.width-33 {
+    flex: 0 0 33%;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+/* Media queries for mobile responsiveness */
+@media (max-width: 768px) {
+    .width-33 {
+        flex: 0 0 48%; /* Two images per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .width-33 {
+        flex: 0 0 100%; /* One image per row */
+    }
 }
 /*CONTACT US SECTION*/
 .contact form {
@@ -346,12 +426,8 @@ nav .navbar a {
 	margin-top: 80px;
 	margin-left: 20px;
 }
-  @media(max-width:700px){
-    html{
-        font-size: 48%;
-    }
-}
   
+ /*-----project section----*/
 #project {
     text-align: center;
     padding: 2rem 1rem;
@@ -471,7 +547,7 @@ nav svg{
 .open-sidebar-button,.close-sidebar-button{
 	display: none;
 }
-@media(max-width :500px){
+@media(max-width :550px){
 	.links-container{
 		flex-direction:column;
 		align-items:flex-start;
@@ -496,7 +572,7 @@ nav svg{
 		display:block;
 	}
 	#sidebar-active:checked ~ .links-container{
-		right: 0;
+		right: 0%;
 	}
 	#sidebar-active:checked~ #overlay{
 		height:100%;
@@ -506,4 +582,5 @@ nav svg{
 		left:0;
 		z-index:9;
 	}
+	
 }
